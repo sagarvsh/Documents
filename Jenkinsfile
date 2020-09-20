@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Publish') {
             steps {
-                step {
+                step (
                 sshagent([GitHubSSH]) {
                     sh """
                     source /opt/rh/rh-python36/enable
@@ -17,7 +17,7 @@ pipeline {
                     mkdocs gh-deploy
                     """
                     }
-                }
+                )
             }
         }
     }
