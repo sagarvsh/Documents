@@ -6,7 +6,7 @@ pipeline {
     }
     stages {
         stage ('Publish') {
-                sshagent([SAG_KEY]) {
+                sshagent([GitHubSSH]) {
                     sh """
                     source /opt/rh/rh-python36/enable
                     python3 -m venv $HOME/venv
