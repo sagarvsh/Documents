@@ -6,9 +6,9 @@ pipeline {
     }
     stages {
         stage ('Publish') {
-            //steps {
-                //step (
-                //sshagent([GitHubSSH]) {
+            steps {
+                step (
+                sshagent([GitHubSSH]) {
                     sh """#!/bin/sh
                     source /opt/rh/rh-python36/enable
                     python3 -m venv $HOME/venv
@@ -16,9 +16,9 @@ pipeline {
                     pip install --requirement=requirements.txt
                     mkdocs gh-deploy
                     """
-                   // }
-                //)
-            //}
+                   }
+                )
+            }
         }
     }
 }
