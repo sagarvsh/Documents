@@ -6,10 +6,10 @@ pipeline {
     }
     stages {
         stage ('Publish') {
-            steps {
-                step (
+            //steps {
+                //step (
                 //sshagent([GitHubSSH]) {
-                    sh """
+                    sh """#!/bin/sh
                     source /opt/rh/rh-python36/enable
                     python3 -m venv $HOME/venv
                     source #HOME/venv/bin/activate
@@ -17,8 +17,8 @@ pipeline {
                     mkdocs gh-deploy
                     """
                    // }
-                )
-            }
+                //)
+            //}
         }
     }
 }
