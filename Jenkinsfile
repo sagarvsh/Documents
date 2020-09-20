@@ -6,6 +6,8 @@ pipeline {
     }
     stages {
         stage ('Publish') {
+            steps {
+                step {
                 sshagent([GitHubSSH]) {
                     sh """
                     source /opt/rh/rh-python36/enable
@@ -14,8 +16,9 @@ pipeline {
                     pip install --requirement=requirements.txt
                     mkdocs gh-deploy
                     """
+                    }
                 }
-            
+            }
         }
     }
 }
