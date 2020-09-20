@@ -6,7 +6,6 @@ pipeline {
     }
     stages {
         stage ('Publish') {
-            step {
                 sshagent([SAG_KEY]) {
                     sh """
                     source /opt/rh/rh-python36/enable
@@ -16,7 +15,7 @@ pipeline {
                     mkdocs gh-deploy
                     """
                 }
-            }
+            
         }
     }
 }
