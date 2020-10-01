@@ -8,7 +8,7 @@ pipeline {
         stage ('Publish') {
             steps {
                 step (
-                sshagent([GitHubSSH]) {
+                sshagent(['GitHubSSH']) {
                     sh """#!/bin/sh
                     source /opt/rh/rh-python36/enable
                     python3 -m venv $HOME/venv
