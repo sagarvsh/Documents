@@ -9,3 +9,12 @@ We believe that these questions/exercise will help the candidates to get the rig
 3. Create a container(Docker) image that contains an application server with above build artifacts.
 Define Deployment, Service yaml/json files to deploy above container image on to Kubernetes/OpenShift platforms.
 Write a Cookbook/Playbook to host a simple application server with above build artifacts (Question 2).
+
+Branching Statergy
+
+Declarity pipeline vs scripted pipeline
+
+common libraries in Jenkins
+
+Multi branch pipeline vs  Org scan job
+
