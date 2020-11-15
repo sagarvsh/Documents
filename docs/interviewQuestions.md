@@ -1249,4 +1249,169 @@ cloudbees-devbox $ export JENKINS_URL=http://jenkins:8080/jenkins
 cloudbees-devbox $ java -jar jenkins-cli.jar \
  -auth butler:{API Token} help
  ```
- 
+
+ ### No Proxy Setup
+
+ You can instead configure No Proxy Host using the -Dhttp.nonProxyHosts property in the Master startup script
+
+ ### FIREWALL CONSIDERATIONS
+
+If your CloudBees Core instances run behind a Firewall:
+
+* The firewall must use raw tcp mode for the CLI port
+
+* Complex keep-alive functionality on the firewall may interfere with CloudBees Core operations
+
+* The firewall must not exercise round robin operations on the CLI port
+
+
+### RBAC COMPONENTS
+
+RBAC = Role-Based Access Control
+
+Roles defined by administrators
+
+Set of Permissions assigned to Roles
+
+Roles assigned to Groups
+
+Users belong to Groups
+
+Groups defined for Masters, Folders, and Jobs
+
+ALTERNATIVES TO RBAC
+Authorization can be implemented using the standard Jenkins Matrix-based security strategy
+
+You must install the Matrix Authorization Strategy Plugin manually
+
+If you have a large number of users, this can be very cumbersome to maintain over time
+
+Team Masters on CloudBees Core on modern cloud platforms provides a simplified authorization strategy
+
+All users with administer authorization on the Operations Center have administer authorization for each Team Master
+
+The Administrator for the Team Master defines the users for that Master and whether each user is an Administrator, a Member who can read, write, and execute Pipelines, or a Guest who has read-only access to the Pipelines on this Master
+
+ROLE-BASED ACCESS CONTROL
+rbac simplified
+
+BENEFITS OF RBAC
+RBAC supports granular permissions for roles
+
+Similar to Linux file permissions but more extensive
+
+For example
+
+Browse role has read-only permissions
+
+QA role supports read/write/execute permissions
+
+Roles and Groups assignable to CloudBees Core objects to apply to contents
+
+For example
+
+A team-only project folder containing all jobs in a pipeline
+
+A QA job only available to the QA team
+
+Groups allow for mass permissions management
+
+CLOUDBEES RBAC PLUGIN
+CloudBees Core includes the RBAC plugin
+
+RBAC configurable in Authorization Policy
+
+Manage Jenkins → Configure Global Security
+
+WHAT RBAC ALLOWS
+RBAC allows:
+
+Global level role assignment
+
+Object specific authorizations
+
+Roles can apply to all objects
+
+Masters
+
+Shared agents
+
+Jobs
+
+Folders
+
+Views
+
+Roles are selectively inheritable
+
+Filter out undesired inheritance from Parent to Child
+
+### CONFIGURE NON-BLOCKING I/O SSH AGENTS
+
+Configured when you create a new agent, shared agent, or shared cloud
+
+    * Launch agents on Unix machines via SSH (Non-blocking I/O)
+
+        * Prefix Start Agent Command syntax
+
+        * Suffix Start Agent Command syntax
+
+        * Logging of Agent Environment
+
+Only minor differences from old SSH configuration
+
+#### PREFIX/SUFFIX START AGENT
+
+Prefix Start Agent
+
+Command to be **prepended** to the start agent command
+
+You no longer need to remember to include a space
+
+Suffix Start Agent
+
+Command to be **appended** to the start agent command
+
+You no longer need to remember to include a space
+
+LOGGING OF AGENT ENVIRONMENT
+The traditional SSH connector outputs environment variables to build log
+
+NIO SSH makes this optional
+
+Off by default
+
+Agent environment variables on the node’s System Information screen
+
+USING NON-BLOCKING SSH AGENTS ON WINDOWS
+Works with Cygwin’s OpenSSH
+
+Other SSH implementations on Windows not tested
+
+See documentation for troubleshooting steps
+
+Setting up a reference Windows agent
+
+### ASSIGN PERMISSIONS ON SHARED NODES
+
+In most cases, you will want to grant the same permissions to the same roles you use for regular agents but you have the option of defining different permissions and roles
+
+Client Master /Configure -
+
+Can modify the configuration and management parts of Client Masters
+
+Shared Agent /Configure and Shared Cloud /Configure -
+
+Can modify the configuration of shared agents and shared clouds
+
+Shared Agent /Connect and Shared Cloud /Connect -
+
+Allows an inbound agent to be connected as a shared agent or shared cloud
+
+Shared Agent /Disconnect and Shared Cloud /Disconnect -
+
+Disconnect an inbound agent from the shared cloud
+
+Shared Agent /ForceRelease and Shared Cloud /ForceRelease -
+
+Can force a lease of a shared agent into the released state
