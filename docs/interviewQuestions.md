@@ -10,6 +10,8 @@ We believe that these questions/exercise will help the candidates to get the rig
 Define Deployment, Service yaml/json files to deploy above container image on to Kubernetes/OpenShift platforms.
 Write a Cookbook/Playbook to host a simple application server with above build artifacts (Question 2).
 
+Data Flow?
+
 ##### Branching Statergy
 
 
