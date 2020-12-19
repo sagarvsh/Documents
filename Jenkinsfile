@@ -12,7 +12,7 @@ pipeline {
                     sh """#!/bin/sh
                     source /opt/rh/rh-python36/enable
                     python3 -m venv $HOME/venv
-                    source #HOME/venv/bin/activate
+                    source $HOME/venv/bin/activate
                     pip install --requirement=requirements.txt
                     mkdocs gh-deploy
                     """
