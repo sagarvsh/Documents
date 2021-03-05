@@ -1,0 +1,2358 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Welcome to my personal documentation site These pages contain radom documents which I have created which may be useful or just saved for the sake of it Dont know when it will be useful, but what the hell Lets publish it, Cheers!!!">
+      
+      
+      
+        <link rel="canonical" href="https://sagarvsh.github.io/Documents/interviewQuestions/">
+      
+      
+        <meta name="author" content="Sagar V S">
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>CICD Interview Questions - DevOps Documents</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ff6e42">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cicd-interview-questions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://sagarvsh.github.io/Documents/" title="DevOps Documents" class="md-header-nav__button md-logo" aria-label="DevOps Documents">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DevOps Documents
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              CICD Interview Questions
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/sagarvsh/Documents" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sagarvsh/Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://sagarvsh.github.io/Documents/" title="DevOps Documents" class="md-nav__button md-logo" aria-label="DevOps Documents">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    DevOps Documents
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/sagarvsh/Documents" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sagarvsh/Documents
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started.md" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-your-site.md" class="md-nav__link">
+      Creating your site
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../publishing-your-site.md" class="md-nav__link">
+      Publishing your site
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization.md" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting.md" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data-privacy.md" class="md-nav__link">
+      Data privacy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../insiders.md" class="md-nav__link">
+      Insiders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../license.md" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      CICD Tools
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="CICD Tools" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        CICD Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../github/github.md" class="md-nav__link">
+      GitHub
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../jenkins/" class="md-nav__link">
+      Jenkins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/changing-the-language.md" class="md-nav__link">
+      Changing the language
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/changing-the-logo-and-icons.md" class="md-nav__link">
+      Changing the logo and icons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-navigation.md" class="md-nav__link">
+      Setting up navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-site-search.md" class="md-nav__link">
+      Setting up site search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-site-analytics.md" class="md-nav__link">
+      Setting up site analytics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-the-header.md" class="md-nav__link">
+      Setting up the header
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/adding-social-links.md" class="md-nav__link">
+      Adding social links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/adding-a-git-repository.md" class="md-nav__link">
+      Adding a git repository
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/adding-a-comment-system.md" class="md-nav__link">
+      Adding a comment system
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/abbreviations.md" class="md-nav__link">
+      Abbreviations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/admonitions.md" class="md-nav__link">
+      Admonitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/buttons.md" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/code-blocks.md" class="md-nav__link">
+      Code blocks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/content-tabs.md" class="md-nav__link">
+      Content tabs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/data-tables.md" class="md-nav__link">
+      Data tables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/footnotes.md" class="md-nav__link">
+      Footnotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/formatting.md" class="md-nav__link">
+      Formatting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/icons-emojis.md" class="md-nav__link">
+      Icons + Emojis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/images.md" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/lists.md" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/mathjax.md" class="md-nav__link">
+      MathJax
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/meta-tags.md" class="md-nav__link">
+      Meta tags
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/variables.md" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Changelog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Changelog" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Changelog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../changelog.md" class="md-nav__link">
+      Release notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upgrading.md" class="md-nav__link">
+      Upgrading
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations.md" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#branching-statergy" class="md-nav__link">
+    Branching Statergy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-jenkins-executes-a-pipeline" class="md-nav__link">
+    HOW JENKINS EXECUTES A PIPELINE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-agents-do" class="md-nav__link">
+    WHAT AGENTS DO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-directive" class="md-nav__link">
+    WHEN DIRECTIVE
+  </a>
+  
+    <nav class="md-nav" aria-label="WHEN DIRECTIVE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-the-when-directive" class="md-nav__link">
+    WHAT IS THE "WHEN" DIRECTIVE?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#built-in-conditions" class="md-nav__link">
+    BUILT-IN CONDITIONS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#built-in-nested-conditions" class="md-nav__link">
+    BUILT-IN NESTED CONDITIONS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-conditions" class="md-nav__link">
+    MULTIPLE CONDITIONS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementing-when-directive" class="md-nav__link">
+    IMPLEMENTING "WHEN" DIRECTIVE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-directive-example" class="md-nav__link">
+    "WHEN" DIRECTIVE EXAMPLE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentials-example-code" class="md-nav__link">
+    CREDENTIALS EXAMPLE CODE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-timeout" class="md-nav__link">
+    SET TIMEOUT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-parameters" class="md-nav__link">
+    EXAMPLE OF PARAMETERS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-triggers" class="md-nav__link">
+    SUPPORTED TRIGGERS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credential-usage-example" class="md-nav__link">
+    Credential Usage Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-validation-of-a-backup" class="md-nav__link">
+    SIMPLE VALIDATION OF A BACKUP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jenkins-cli" class="md-nav__link">
+    Jenkins CLI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbac-components" class="md-nav__link">
+    RBAC COMPONENTS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-non-blocking-io-ssh-agents" class="md-nav__link">
+    CONFIGURE NON-BLOCKING I/O SSH AGENTS
+  </a>
+  
+    <nav class="md-nav" aria-label="CONFIGURE NON-BLOCKING I/O SSH AGENTS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefixsuffix-start-agent" class="md-nav__link">
+    PREFIX/SUFFIX START AGENT
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assign-permissions-on-shared-nodes" class="md-nav__link">
+    ASSIGN PERMISSIONS ON SHARED NODES
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="cicd-interview-questions">CICD Interview Questions<a class="headerlink" href="#cicd-interview-questions" title="Permanent link">&para;</a></h1>
+<p>We believe that these questions/exercise will help the candidates to get the right expectations about the type of work that (s)he is goin to get. This will also help us to fitler candidates who are not suitable for the position.</p>
+<p>**Try to answer maximum questions. Feel free to use Google. Please upload the answers to a github repository and share us the URL.</p>
+<ol>
+<li>Configure Jenkins job to trigger SonarQube analysis on Pull Requests/Code Reviews?</li>
+<li>Write a Jenkins pipelin to fetch source from GitHub and publish the (Java/NodeJS) artifacts to Artifactory/nexus repository.</li>
+<li>Create a container(Docker) image that contains an application server with above build artifacts.
+Define Deployment, Service yaml/json files to deploy above container image on to Kubernetes/OpenShift platforms.
+Write a Cookbook/Playbook to host a simple application server with above build artifacts (Question 2).</li>
+</ol>
+<p>Data Flow?</p>
+<h5 id="branching-statergy">Branching Statergy<a class="headerlink" href="#branching-statergy" title="Permanent link">&para;</a></h5>
+<p>common libraries in Jenkins</p>
+<p>Multi branch pipeline vs  Org scan job</p>
+<details class="tip"><summary>HOW TO DO SECURITY? LEAST PRIVILEGE</summary><ul>
+<li>
+<p>Handling "Least privileges" concepts helps you manage the AAA concepts:</p>
+<ul>
+<li>
+<p>Authentication — Control who can access the system</p>
+</li>
+<li>
+<p>Authorization — Control what each user can do on the system</p>
+</li>
+<li>
+<p>Accounting — Monitor your system to ensure that only valid processes are executing</p>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<h4 id="how-jenkins-executes-a-pipeline">HOW JENKINS EXECUTES A PIPELINE<a class="headerlink" href="#how-jenkins-executes-a-pipeline" title="Permanent link">&para;</a></h4>
+<p>A simple overview of how Jenkins executes a Pipeline helps us understand the security considerations:</p>
+<p>By default, the Pipeline executes with the full privileges of the Jenkins administrator</p>
+<p>You can configure Jenkins to execute Pipelines with fewer privileges</p>
+<p>All of the Pipeline logic, the Groovy conditionals, loops, etc execute on the master</p>
+<p>Creates a workspace for each build that runs</p>
+<p>Stores files created for that build</p>
+<p>The Pipeline calls steps that run on agents</p>
+<h4 id="what-agents-do">WHAT AGENTS DO<a class="headerlink" href="#what-agents-do" title="Permanent link">&para;</a></h4>
+<p>The Pipeline calls a series of steps, each of which is a script or command that does the real work and mostly executes using an executor on an agent</p>
+<p>Agent writes some files to the local node</p>
+<p>Agent sends data back to the master</p>
+<p>Agent can also request information from the master</p>
+<details class="tip"><summary>What is Declarity pipeline vs scripted pipeline</summary><p>Scripted: sequential execution, using Groovy expressions for flow control</p>
+<p>Declarative: uses a framework to control execution</p>
+</details>
+<details class="tip"><summary>Explain Jenkins Pipeline</summary><p><a href="jenkins.io/doc/book/pipeline">JENKINS PIPELINE</a></p>
+<p>Jenkins Pipeline is a tool for defining your Continuous Delivery/Deployment flow as code</p>
+<ul>
+<li>
+<p>New fundamental "type" in Jenkins that conceptualizes and models a Continuous Delivery process</p>
+</li>
+<li>
+<p>Two syntaxes:</p>
+<ul>
+<li>
+<p><strong>Scripted: sequential execution, using Groovy expressions for flow control</strong></p>
+</li>
+<li>
+<p><strong>Declarative: uses a framework to control execution</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Uses the Pipeline DSL (Domain-specific Language)</p>
+<ul>
+<li>programmatically manipulate Jenkins Objects</li>
+</ul>
+</li>
+<li>
+<p>Captures the entire continuous delivery process as code</p>
+<ul>
+<li>Pipeline is <em>not</em> a job creation tool like the Job DSL plugin or Jenkins Job Builder</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>What are pipeline benefits</summary><div class="highlight"><pre><span></span><code>PIPELINE BENEFITS (1/2)
+The pipeline functionality is:
+
+Durable: The Jenkins master can restart and the Pipeline continues to run
+
+Pausable: can stop and wait for human input or approval
+
+Versatile: supports complex real-world CD requirements (fork, join, loop, parallelize)
+
+Extensible: supports custom extensions to its &quot;DSL&quot; (Domain-specific Language)
+
+PIPELINE BENEFITS (2/2)
+Reduces number of jobs
+
+Easier maintenance
+
+Decentralization of job configuration
+
+Easier specification through code
+</code></pre></div>
+</details>
+<details class="tip"><summary>JENKINS VOCABULARY</summary><ul>
+<li>
+<p>Master:</p>
+<ul>
+<li>
+<p>Computer, VM or container where Jenkins is installed and run</p>
+</li>
+<li>
+<p>Serves requests and handles build tasks</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Agent: (formerly "slave")</p>
+<ul>
+<li>
+<p>Computer, VM or container that connects to a Jenkins Master</p>
+</li>
+<li>
+<p>Executes tasks when directed by the Master</p>
+</li>
+<li>
+<p>Has a number and scope of operations to perform.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Node is sometimes used to refer to the computer, VM or container used for the Master or Agent; be careful because "Node" has another meaning for Pipeline</p>
+</li>
+<li>
+<p>Executor:</p>
+<ul>
+<li>
+<p>Computational resource for running builds</p>
+</li>
+<li>
+<p>Performs Operations</p>
+</li>
+<li>
+<p>Can run on any Master or Agent, although running builds on masters can degrade performance and opens up serious security vulnerabilities</p>
+</li>
+<li>
+<p>Can be parallelized on a specific Master or Agent</p>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>JENKINS PIPELINE SECTIONS</summary><ul>
+<li>
+<p>The Jenkinsfile that defines a Pipeline uses a DSL based on Apache Groovy syntax</p>
+<ul>
+<li>
+<p>Is structured in sections, called stages</p>
+</li>
+<li>
+<p>Each stage includes steps</p>
+</li>
+<li>
+<p>steps include the actual tests/commands to run</p>
+</li>
+<li>
+<p>An agent defines where the programs and scripts execute</p>
+</li>
+</ul>
+</li>
+<li>
+<p>This is illustrated in the following simple Jenkinsfile:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
+<span class="n">agent</span> <span class="o">{</span> <span class="n">label</span> <span class="s1">&#39;linux&#39;</span> <span class="o">}</span>
+<span class="n">stages</span> <span class="o">{</span>
+    <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;MyBuild&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">steps</span> <span class="o">{</span>
+        <span class="n">sh</span> <span class="s1">&#39;./jenkins/build.sh&#39;</span>
+    <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;MySmalltest&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">steps</span> <span class="o">{</span>
+        <span class="n">sh</span> <span class="s1">&#39;./jenkins/smalltest.sh&#39;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>DECLARATIVE VERSUS SCRIPTED PIPELINE</summary><ul>
+<li>
+<p>Two different syntaxes for Pipeline</p>
+</li>
+<li>
+<p>Both are built on same Pipeline subsystem</p>
+</li>
+<li>
+<p>Both definitions are stored in a Jenkinsfile under SCM ("Pipeline-as-code")</p>
+</li>
+<li>
+<p>Both rely on the Pipeline DSL, which is based on Apache Groovy syntax</p>
+</li>
+<li>
+<p>Both can use steps built into Pipeline or provided in plugins</p>
+</li>
+<li>
+<p>Both support shared libraries</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>SCRIPTED PIPELINE</summary><ul>
+<li>
+<p>Executed serially, from top down</p>
+</li>
+<li>
+<p>Relies on Groovy expressions for flow control</p>
+<ul>
+<li>Requires extensive knowledge of Groovy syntax</li>
+</ul>
+</li>
+<li>
+<p>Very flexible and extensible</p>
+<ul>
+<li>
+<p>Limitations are mostly Groovy limitations</p>
+</li>
+<li>
+<p>Power users with complex requirements may need it</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Novice users can easily mess up the syntax</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>DECLARATIVE PIPELINE</summary><ul>
+<li>
+<p>Stricter, pre-defined structure</p>
+</li>
+<li>
+<p>Execution can always be resumed after an interruption, no matter what caused the interruption</p>
+</li>
+<li>
+<p>Requires only limited knowledge of Groovy syntax</p>
+<ul>
+<li>Using Blue Ocean simplifies the Pipeline creation process even more</li>
+</ul>
+</li>
+<li>
+<p>Encourages a declarative programming model</p>
+</li>
+<li>
+<p>Reduces the risk of syntax errors</p>
+</li>
+<li>
+<p>Use the script step to include bits of scripted code within a Declarative Pipeline only when you have needs that are beyond the capabilities of Declarative syntax</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>PIPELINE CONCEPTS</summary><ul>
+<li>
+<p>Pipeline is "glue" code that binds tasks together into a CD flow.</p>
+<ul>
+<li>
+<p>Use the Pipeline DSL for CI/CD scripting only!</p>
+</li>
+<li>
+<p>Do not code arbitrary networking and computational tasks into the Pipeline itself</p>
+</li>
+<li>
+<p>Use tools like Maven, Gradle, NPM, Ant and Make to do the majority of the build “work”</p>
+</li>
+<li>
+<p>Use scripts written in Shell, Batch, or Python for other related tasks</p>
+</li>
+<li>
+<p>Then call these executables as steps in your Pipeline</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Declarative Pipeline keeps the complex logic of individual steps separate from the Pipeline itself, making the Pipeline code clean to read</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>What is Archive Artifacts post stage in Jenkins Pipeline</summary><ul>
+<li>
+<p>Use the pipeline step archiveArtifacts</p>
+</li>
+<li>
+<p>Requires a pattern to know which artifacts to archive</p>
+<ul>
+<li>
+<p>my-app.zip:</p>
+<ul>
+<li>The file my-app.zip, at the workspace’s root</li>
+</ul>
+</li>
+<li>
+<p>images/*.png:</p>
+<ul>
+<li>All files with .png extension in the images folder at the workspace’s root</li>
+</ul>
+</li>
+<li>
+<p>target/**/*.jar:</p>
+<ul>
+<li>All files with .jar extension, recursively under the target folder, at the workspace’s root</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Archiving keeps those files in ${JENKINS_HOME} forever unless you delete them</p>
+</li>
+</ul>
+<details class="tip"><summary>FINGERPRINTS</summary></details>
+<ul>
+<li>
+<p>A fingerprint is the MD5 checksum of an artifact</p>
+</li>
+<li>
+<p>Each archived artifact can be fingerprinted; merely check the "Fingerprint" box when you create the archiving step</p>
+</li>
+<li>
+<p>Jenkins uses Fingerprints to keep track of artifacts without any ambiguity</p>
+</li>
+<li>
+<p>A database of all fingerprints is managed on the Master</p>
+<ul>
+<li>Located in the ${JENKINS_HOME}/fingerprints directory</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>USING ARCHIVED ARTIFACTS</summary><ul>
+<li>
+<p>In a production environment, your build chain system (Maven, Gradle, Make, etc.) publishes artifacts to an artifact repository such as Artifactory, Nexus, etc.</p>
+</li>
+<li>
+<p>Teams can also deploy artifacts from Jenkins to test environments</p>
+</li>
+<li>
+<p>Use the Copy Artifact Plugin to take artifacts from one project (Pipeline run) and copy them to another Project</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>ARTIFACT RETENTION POLICY</summary><ul>
+<li>
+<p>Coupled to build retention policy</p>
+<ul>
+<li>Deleting a build deletes attached artifacts</li>
+</ul>
+</li>
+<li>
+<p>Good practice: discard build and clean it</p>
+<ul>
+<li>
+<p>Driven by age: # days to keep a build</p>
+</li>
+<li>
+<p>Driven by number: Max # of builds to keep</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Important builds can individually be Kept Forever</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>WHAT IS JUNIT?</summary><ul>
+<li>
+<p>As an external application, JUnit is a common testing framework for Java programs</p>
+</li>
+<li>
+<p>In the Jenkins context, JUnit is a publisher that consumes XML test reports</p>
+<ul>
+<li>
+<p>Generates some graphical visualization of the historical test results</p>
+</li>
+<li>
+<p>Provides a web UI for viewing test reports, tracking failures and so forth</p>
+</li>
+<li>
+<p>Useful for tracking test result trends</p>
+</li>
+<li>
+<p>Works with all supported build tools</p>
+<ul>
+<li>You must specify the appropriate path name for the XML test reports generated by the build tool you are using</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>JUnit in this course means the Jenkins publisher</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>PARALLEL STAGES</summary><ul>
+<li>
+<p>Stages can be run in parallel:</p>
+<ul>
+<li>
+<p>Long running stages</p>
+</li>
+<li>
+<p>Builds for different target architectures or OSes (Debian/Fedora, Android/iOS) or different software versions (JVM8/11), et cetera</p>
+</li>
+<li>
+<p>Builds of independent modules of your code</p>
+</li>
+<li>
+<p>Unit and integration tests are tied to the code; run them in parallel</p>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>DECLARATIVE PARALLEL SYNTAX</summary><ul>
+<li>
+<p>Each "parallelized branch" is a stage</p>
+</li>
+<li>
+<p>A stage can use either steps or parallel at the top level; it cannot use both</p>
+</li>
+<li>
+<p>A stage within a parallel stage can contain agent and steps sections</p>
+</li>
+<li>
+<p>A parallel stage cannot contain agent or tools</p>
+</li>
+<li>
+<p>Add <strong><em>failfast true</em></strong> to force all parallel processes to abort if one fails</p>
+</li>
+</ul>
+</details>
+<details><summary>HOW PARALLEL STAGES ARE SCHEDULED</summary><ul>
+<li>
+<p>By default, Jenkins tries to allocate a stage to the last node on which it (or a similar stage) executed.</p>
+<ul>
+<li>This may mean that multiple parallel steps execute on the same node while other nodes in the cluster are idle</li>
+</ul>
+</li>
+<li>
+<p>Use the Least Load Plugin to replace the default load balancer with one that schedules a new stage to nodes with the least load</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>SCRIPTED PIPELINES IN PRODUCTION</summary><ul>
+<li>
+<p>This exercise is a short introduction to Scripted Pipelines</p>
+</li>
+<li>
+<p>Scripted Pipelines used in production have the following characteristics:</p>
+</li>
+<li>
+<p>Jenkinsfile must be created and modified in a text editor</p>
+</li>
+<li>
+<p>Should be Multibranch Pipeline</p>
+<ul>
+<li>Requires Git, Bitbucket or SVN<ul>
+<li>Must be configured to the SCM repository, with credentials, hooks, etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Must be committed to the SCM like any other code</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>WHAT IS MULTIBRANCH?</summary><ul>
+<li>
+<p>Recommended for all new Pipelines</p>
+</li>
+<li>
+<p>All Pipelines created with Blue Ocean are multibranch</p>
+</li>
+<li>
+<p>Requires Git, Bitbucket or SVN</p>
+</li>
+<li>
+<p>Configures a set of branches</p>
+<ul>
+<li>Jenkins creates a subproject for each branch in the SCM repository</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>WHY MULTIBRANCH</summary><ul>
+<li>
+<p>Automatic Workflow creation for each new branch in the repository</p>
+<ul>
+<li>Assumes that webhooks are registered from the SCM to Jenkins</li>
+</ul>
+</li>
+<li>
+<p>Builds are specific to that child/branch and its unique SCM change and build history</p>
+</li>
+<li>
+<p>Automatic job pruning/deletion for branches deleted from the repository, according to the settings</p>
+</li>
+<li>
+<p>Ability to override the parent properties for a specific branch, if necessary</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>SPECIFY DOCKER AGENT IN PIPELINE</summary><ul>
+<li>
+<p>agent { docker }</p>
+<ul>
+<li>
+<p>Execute the Pipeline or stage with the specified container</p>
+</li>
+<li>
+<p>The container will be dynamically provisioned on the node</p>
+</li>
+</ul>
+</li>
+<li>
+<p>agent { dockerfile }</p>
+<ul>
+<li>Execute the Pipeline or stage with a container built from the specified Dockerfile</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>DOCKER CONTAINER DURABILITY</summary><ul>
+<li>
+<p>When you specify a docker container for an agent, Jenkins calls APIs directly</p>
+<ul>
+<li>These commands are serialized so they can resume after a master restart</li>
+</ul>
+</li>
+<li>
+<p>When you use a shell step to run a Docker command directly, the step is bound to the durable task of the shell</p>
+<ul>
+<li>The Docker container and any tasks running in it are terminated when the shell terminates</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>SIMPLE SYNTAX</summary><p>Run all Pipeline stages on any node machine:</p>
+<div class="highlight"><pre><span></span><code>``` groovy
+pipeline {
+agent any
+....
+}
+Run all Pipeline stages on a node machine tagged as bzzzmaven:
+
+pipeline {
+agent { label &#39;bzzzmaven&#39; }
+....
+}
+```
+</code></pre></div>
+<p>Run all Pipeline stages on a container based on the image bzzzcentos:7:</p>
+<div class="highlight"><pre><span></span><code>``` groovy
+pipeline {
+agent { docker &#39;bzzzcentos:7&#39; }
+....
+}
+```
+</code></pre></div>
+</details>
+<details class="tip"><summary>PER-STAGE AGENT SYNTAX</summary><ul>
+<li>
+<p>Do not run stages on an agent by default</p>
+</li>
+<li>
+<p>Run the stage Build on a node machine tagged as bzzzmaven</p>
+</li>
+<li>
+<p>Run the stage Deploy on a node machine tagged as bzzzproduction:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
+<span class="n">agent</span> <span class="n">none</span>
+<span class="n">stages</span> <span class="o">{</span>
+    <span class="n">stage</span> <span class="o">(</span><span class="s1">&#39;Build&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">agent</span> <span class="o">{</span> <span class="n">label</span> <span class="s1">&#39;bzzzmaven&#39;</span> <span class="o">}</span>
+    <span class="n">steps</span> <span class="o">{</span> <span class="o">...</span> <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">stage</span> <span class="o">(</span><span class="s1">&#39;Deploy&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">agent</span> <span class="o">{</span> <span class="n">label</span> <span class="s1">&#39;bzzzproduction&#39;</span> <span class="o">}</span>
+    <span class="n">steps</span> <span class="o">{</span> <span class="o">...</span> <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>SPECIFY AGENTS FOR OUR PIPELINE</summary><p>We are building our application to work with both JDK7 and JDK8. This means that we need a JDK7 environment and a JDK8 environment. To implement this:</p>
+<div class="highlight"><pre><span></span><code>* Change the global agent to be agent none; in other words, there is no global agent
+
+* Specify the appropriate agent (labeled either jdk7 or jdk8) for the build and test steps that need the specific JDK environment.
+
+* Specify agent any for stages that do not require a specific JDK version.
+</code></pre></div>
+</details>
+<details class="tip"><summary>STASH/UNSTASH</summary><ul>
+<li>
+<p>Use stash to save a set of files for use later in the same build, but in another stage that executes on another node/workspace</p>
+</li>
+<li>
+<p>Use unstash to restore the stashed files into the current workspace of the other stage</p>
+</li>
+<li>
+<p>Stashed files are discarded at the end of the build</p>
+</li>
+<li>
+<p>Stashed files are archived in a compressed tar file, which works well for small (&lt;5 Mb) files</p>
+<ul>
+<li>
+<p>Stashing large files consumes significant resources (especially CPU) on both the Master and agent nodes</p>
+</li>
+<li>
+<p>For large files, consider using:</p>
+<ul>
+<li>
+<p>the External Workspace manager plugin</p>
+</li>
+<li>
+<p>an external repository manager such as Nexus or Artifactory</p>
+</li>
+<li>
+<p>the Artifact Manager on S3 plugin (README)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>CALLING SYNTAX</p>
+<div class="highlight"><pre><span></span><code>* stash and unstash are implemented as steps within a stage
+
+* stash requires one parameter, name, which is a simple identifier for the set of files being stashed
+
+* By default, stash places all workspace files into the named stash
+
+* To store files from a different directory (or a subset of the workspace):
+
+    - Use the optional includes parameter to give the name of the files or directories to store. This accepts a set of Ant-style include patterns.
+
+    - Other optional parameters are documented on the Pipeline: Basic Steps reference page
+
+* To unstash files:
+
+    - Optionally, use the `dir` step to create a directory where the files will be written.
+
+    - Call `unstash`, using the name you assigned with the stash step above.
+</code></pre></div>
+<p>IMPLEMENT STASH/UNSTASH (&frac12;)</p>
+<div class="highlight"><pre><span></span><code>* We are going to make our Pipeline build and test our software for both JDK 7 and JDK 8.
+
+    - We will use stash/unstash to ensure that the JDK 7 tests are run against the JDK 7 build and that the JDK 8 tests are run against the JDK 8 build:
+
+* Add a step to the &quot;Build Java 7&quot; stage: &quot;Stash some files to be used later in the build&quot;
+
+    - Name the stash &quot;Buzz Java 7&quot;; enter target/** in the &quot;Includes&quot; box to save everything under the target directory
+
+* Follow the same procedure to stash &quot;Buzz Java 8&quot; in the &quot;Build Java 8&quot; stage
+</code></pre></div>
+</details>
+<details class="tip"><summary>CODE: WAIT FOR INPUT</summary><p>The code in the Jenkinsfile looks like:</p>
+<div class="highlight"><pre><span></span><code><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Confirm Deploy to Staging&#39;</span><span class="o">)</span> <span class="o">{</span>
+<span class="n">agent</span> <span class="n">none</span>
+<span class="n">steps</span> <span class="o">{</span>
+    <span class="n">input</span><span class="o">(</span><span class="nl">message:</span> <span class="s1">&#39;Deploy to Stage&#39;</span><span class="o">,</span> <span class="nl">ok:</span> <span class="s2">&quot;Yes, let&#39;s do it!&quot;</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<ul>
+<li>
+<p>Note that Blue Ocean uses single quotes to enclose the text in the "Message" and "OK" boxes and automatically escapes apostrophes in the text</p>
+</li>
+<li>
+<p>To make the code cleaner, you can use the code editor to use double quotes to enclose the text</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>Sample pipeline</summary></details>
+<details class="tip"><summary>SAMPLE FINISHING PIPEINE</summary><div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
+<span class="n">agent</span> <span class="n">none</span>
+<span class="n">stages</span> <span class="o">{</span>
+    <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Fluffy Build&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">parallel</span> <span class="o">{</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Build Java 8&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java8&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/build.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">success</span> <span class="o">{</span>
+            <span class="n">stash</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;Java 8&#39;</span><span class="o">,</span> <span class="nl">includes:</span> <span class="s1">&#39;target/**&#39;</span><span class="o">)</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Build Java 7&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java7&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/build.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">success</span> <span class="o">{</span>
+            <span class="n">archiveArtifacts</span> <span class="s1">&#39;target/*.jar&#39;</span>
+            <span class="n">stash</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;Java 7&#39;</span><span class="o">,</span> <span class="nl">includes:</span> <span class="s1">&#39;target/**&#39;</span><span class="o">)</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Fluffy Test&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">parallel</span> <span class="o">{</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Backend Java 8&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java8&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 8&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-backend.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">always</span> <span class="o">{</span>
+            <span class="n">junit</span> <span class="s1">&#39;target/surefire-reports/**/TEST*.xml&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Frontend&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java8&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 8&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-frontend.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">always</span> <span class="o">{</span>
+            <span class="n">junit</span> <span class="s1">&#39;target/test-results/**/TEST*.xml&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Performance Java 8&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java8&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 8&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-performance.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Static Java 8&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java8&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 8&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-static.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Backend Java 7&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java7&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 7&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-backend.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">always</span> <span class="o">{</span>
+            <span class="n">junit</span> <span class="s1">&#39;target/surefire-reports/**/TEST*.xml&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Frontend Java 7&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java7&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 7&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-frontend.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">always</span> <span class="o">{</span>
+            <span class="n">junit</span> <span class="s1">&#39;target/test-results/**/TEST*.xml&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Performance Java 7&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java7&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 7&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-performance.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Static Java 7&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">agent</span> <span class="o">{</span>
+            <span class="n">node</span> <span class="o">{</span>
+            <span class="n">label</span> <span class="s1">&#39;java7&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">unstash</span> <span class="s1">&#39;Java 7&#39;</span>
+            <span class="n">sh</span> <span class="s1">&#39;./jenkins/test-static.sh&#39;</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Confirm Deploy&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">when</span> <span class="o">{</span>
+        <span class="n">branch</span> <span class="s1">&#39;master&#39;</span>
+    <span class="o">}</span>
+    <span class="n">steps</span> <span class="o">{</span>
+        <span class="n">input</span><span class="o">(</span><span class="nl">message:</span> <span class="s1">&#39;Okay to Deploy to Staging?&#39;</span><span class="o">,</span> <span class="nl">ok:</span> <span class="s1">&#39;Let\&#39;s Do it!&#39;</span><span class="o">)</span>
+    <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Fluffy Deploy&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">when</span> <span class="o">{</span>
+        <span class="n">branch</span> <span class="s1">&#39;master&#39;</span>
+    <span class="o">}</span>
+    <span class="n">agent</span> <span class="o">{</span>
+        <span class="n">node</span> <span class="o">{</span>
+        <span class="n">label</span> <span class="s1">&#39;java7&#39;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">steps</span> <span class="o">{</span>
+        <span class="n">unstash</span> <span class="s1">&#39;Java 7&#39;</span>
+        <span class="n">sh</span> <span class="s2">&quot;./jenkins/deploy.sh ${params.DEPLOY_TO}&quot;</span>
+    <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="n">parameters</span> <span class="o">{</span>
+    <span class="n">string</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;DEPLOY_TO&#39;</span><span class="o">,</span> <span class="nl">defaultValue:</span> <span class="s1">&#39;dev&#39;</span><span class="o">,</span> <span class="nl">description:</span> <span class="s1">&#39;&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+</details>
+<details class="tip"><summary>SAMPLE POST CODE</summary><div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
+<span class="n">stages</span> <span class="o">{</span>
+    <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Buzz Build&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">parallel</span> <span class="o">{</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Build Java 7&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">steps</span> <span class="o">{</span>
+            <span class="n">sh</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            echo I am a $BUZZ_NAME!</span>
+<span class="s2">            ./jenkins/build.sh</span>
+<span class="s2">            &quot;&quot;&quot;</span>
+        <span class="o">}</span>
+        <span class="n">post</span> <span class="o">{</span>
+            <span class="n">always</span> <span class="o">{</span>
+            <span class="n">archiveArtifacts</span><span class="o">(</span><span class="nl">artifacts:</span> <span class="s1">&#39;target/*.jar&#39;</span><span class="o">,</span> <span class="nl">fingerprint:</span> <span class="kc">true</span><span class="o">)</span>
+            <span class="o">}</span>
+            <span class="n">success</span> <span class="o">{</span>
+            <span class="n">stash</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;Buzz Java 7&#39;</span><span class="o">,</span> <span class="nl">includes:</span> <span class="s1">&#39;target/**&#39;</span><span class="o">)</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="o">}</span>
+<span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div>
+</details>
+<details class="tip"><summary>WHAT IS AN ENVIRONMENT DIRECTIVE?</summary><ul>
+<li>
+<p>Specifies a sequence of key-value pairs that are defined as environment variables</p>
+<ul>
+<li>
+<p>Can be specified globally for the Pipeline, to apply to all steps</p>
+</li>
+<li>
+<p>Can be specified for an individual stage to apply only to that stage</p>
+</li>
+<li>
+<p>By manually coding <code>withEnv</code> inside a steps block, a specific environment variable can be specified for one or more (but not all) steps within a stage</p>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>SINGLE AND DOUBLE QUOTES</summary><ul>
+<li>
+<p>The Pipeline DSL uses Apache Groovy syntax. Variables are dereferenced according to whether they are enclosed in single quotes or double quotes:</p>
+<ul>
+<li>
+<p>Single quotes: The dereferencing syntax (${VARIABLE_NAME}) is passed literally to the Pipeline sh step; the shell interpreter on the agent dereferences the variable.</p>
+</li>
+<li>
+<p>Double quotes: The Pipeline code dereferences the variable on the master’s JVM thread then passes the calculated string to the sh step.</p>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>ENVIRONMENT EXAMPLE</summary><div class="highlight"><pre><span></span><code>pipeline {
+    agent any
+    environment {
+        CC = &#39;clang&#39;
+    }
+    stages {
+        stage(&#39;Example&#39;) {
+            environment {
+                AN_ACCESS_KEY = credentials(&#39;my-predefined-secret-text&#39;)
+            }
+            steps {
+                sh &#39;printenv&#39;
+</code></pre></div>
+<ul>
+<li>
+<p>The first use of environment applies to the entire Pipeline</p>
+</li>
+<li>
+<p>The second use of environment applies only to the Example stage</p>
+</li>
+</ul>
+</details>
+<details class="tip"><summary>NOTIFICATIONS EXAMPLE</summary><p>NOTIFICATIONS WHEN BUILD STARTS (&frac12;)</p>
+<div class="highlight"><pre><span></span><code><span class="n">stages</span> <span class="o">{</span>
+    <span class="n">stage</span> <span class="o">(</span><span class="s1">&#39;Start&#39;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">steps</span> <span class="o">{</span>
+        <span class="c1">// send build started notifications</span>
+        <span class="n">slackSend</span> <span class="o">(</span><span class="nl">color:</span> <span class="s1">&#39;#FFFF00&#39;</span><span class="o">,</span> <span class="nl">message:</span> <span class="s2">&quot;STARTED: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39; (${env.BUILD_URL})&quot;</span><span class="o">)</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>NOTIFICATIONS WHEN BUILD STARTS (2/2)</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/* ... unchanged ... */</span>
+
+<span class="c1">// send to email</span>
+<span class="n">emailext</span> <span class="o">(</span>
+<span class="nl">subject:</span> <span class="s2">&quot;STARTED: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39;&quot;</span><span class="o">,</span>
+<span class="nl">body:</span> <span class="s2">&quot;&quot;&quot;&lt;p&gt;STARTED: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39;:&lt;/p&gt;</span>
+<span class="s2">    &lt;p&gt;Check console output at &amp;QUOT;&lt;a href=&#39;${env.BUILD_URL}&#39;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&amp;QUOT;&lt;/p&gt;&quot;&quot;&quot;</span><span class="o">,</span>
+<span class="nl">recipientProviders:</span> <span class="o">[[</span><span class="n">$class</span><span class="o">:</span> <span class="s1">&#39;DevelopersRecipientProvider&#39;</span><span class="o">]]</span>
+<span class="o">)</span>
+
+<span class="cm">/* ... unchanged ... */</span>
+</code></pre></div>
+<p>NOTIFICATIONS WHEN BUILD SUCCEEDS</p>
+<div class="highlight"><pre><span></span><code><span class="n">post</span> <span class="o">{</span>
+    <span class="n">success</span> <span class="o">{</span>
+        <span class="n">slackSend</span> <span class="o">(</span><span class="nl">color:</span> <span class="s1">&#39;#00FF00&#39;</span><span class="o">,</span> <span class="nl">message:</span> <span class="s2">&quot;SUCCESSFUL: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39; (${env.BUILD_URL})&quot;</span><span class="o">)</span>
+
+        <span class="n">emailext</span> <span class="o">(</span>
+        <span class="nl">subject:</span> <span class="s2">&quot;SUCCESSFUL: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39;&quot;</span><span class="o">,</span>
+        <span class="nl">body:</span> <span class="s2">&quot;&quot;&quot;&lt;p&gt;SUCCESSFUL: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39;:&lt;/p&gt;</span>
+<span class="s2">            &lt;p&gt;Check console output at &amp;QUOT;&lt;a href=&#39;${env.BUILD_URL}&#39;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&amp;QUOT;&lt;/p&gt;&quot;&quot;&quot;</span><span class="o">,</span>
+        <span class="nl">recipientProviders:</span> <span class="o">[[</span><span class="n">$class</span><span class="o">:</span> <span class="s1">&#39;DevelopersRecipientProvider&#39;</span><span class="o">]]</span>
+        <span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>NOTIFICATIONS WHEN BUILD FAILS</p>
+<div class="highlight"><pre><span></span><code><span class="n">failure</span> <span class="o">{</span>
+    <span class="n">slackSend</span> <span class="o">(</span><span class="nl">color:</span> <span class="s1">&#39;#FF0000&#39;</span><span class="o">,</span> <span class="nl">message:</span> <span class="s2">&quot;FAILED: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39; (${env.BUILD_URL})&quot;</span><span class="o">)</span>
+
+    <span class="n">emailext</span> <span class="o">(</span>
+        <span class="nl">subject:</span> <span class="s2">&quot;FAILED: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39;&quot;</span><span class="o">,</span>
+        <span class="nl">body:</span> <span class="s2">&quot;&quot;&quot;&lt;p&gt;FAILED: Job &#39;${env.JOB_NAME} [${env.BUILD_NUMBER}]&#39;:&lt;/p&gt;</span>
+<span class="s2">            &lt;p&gt;Check console output at &amp;QUOT;&lt;a href=&#39;${env.BUILD_URL}&#39;&gt;${env.JOB_NAME} [${env.BUILD_NUMBER}]&lt;/a&gt;&amp;QUOT;&lt;/p&gt;&quot;&quot;&quot;</span><span class="o">,</span>
+        <span class="nl">recipientProviders:</span> <span class="o">[[</span><span class="n">$class</span><span class="o">:</span> <span class="s1">&#39;DevelopersRecipientProvider&#39;</span><span class="o">]]</span>
+    <span class="o">)</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>CONFIGURE NOTIFICATIONS</p>
+<div class="highlight"><pre><span></span><code>* Your Jenkins administrator must configure notifications for Jenkins in order for the notifications to be delivered.
+
+* Slack uses an API token
+
+    - Integration points for each generate the token
+
+    - That generated token must be copied into the Jenkins configuration
+
+* The Slack configuration provides a button that can be used to test the configured connection
+</code></pre></div>
+</details>
+<h3 id="when-directive">WHEN DIRECTIVE<a class="headerlink" href="#when-directive" title="Permanent link">&para;</a></h3>
+<h4 id="what-is-the-when-directive">WHAT IS THE "WHEN" DIRECTIVE?<a class="headerlink" href="#what-is-the-when-directive" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Specifies conditions that must be met for Pipeline to execute the stage</p>
+</li>
+<li>
+<p>Must contain at least one condition</p>
+</li>
+<li>
+<p>Supports nested conditions</p>
+</li>
+</ul>
+<h4 id="built-in-conditions">BUILT-IN CONDITIONS<a class="headerlink" href="#built-in-conditions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>branch</strong> — Execute the <strong>stage</strong> when the branch being built matches the branch pattern given:</p>
+<div class="highlight"><pre><span></span><code><span class="n">when</span> <span class="o">{</span>
+<span class="n">branch</span> <span class="s1">&#39;master&#39;</span>
+<span class="o">}</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>environment</strong> — Execute the <strong>stage</strong> when the specified environment variable is set to the given value:</p>
+<div class="highlight"><pre><span></span><code><span class="n">when</span> <span class="o">{</span>
+<span class="n">environment</span> <span class="nl">name:</span> <span class="s1">&#39;DEPLOY_TO&#39;</span><span class="o">,</span> <span class="nl">value:</span> <span class="s1">&#39;production&#39;</span>
+<span class="o">}</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>expression</strong> — Execute the <strong>stage</strong> when the specified expression evaluates to true:</p>
+<div class="highlight"><pre><span></span><code><span class="n">when</span> <span class="o">{</span>
+<span class="n">expression</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">params</span><span class="o">.</span><span class="na">DEBUG_BUILD</span>
+<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<h4 id="built-in-nested-conditions">BUILT-IN NESTED CONDITIONS<a class="headerlink" href="#built-in-nested-conditions" title="Permanent link">&para;</a></h4>
+</li>
+</ul>
+<p>allOf — Execute the stage when all nested conditions are true:</p>
+<div class="highlight"><pre><span></span><code>when {
+allOf {
+    branch &#39;master&#39;
+    environment name: &#39;DEPLOY_TO&#39;, value: &#39;production&#39; // AND
+}
+}
+</code></pre></div>
+<p>anyOf — Execute the stage when at least one of the nested conditions is true</p>
+<div class="highlight"><pre><span></span><code>when {
+anyOf {
+    branch &#39;master&#39;
+    branch &#39;staging&#39; // OR
+}
+}
+</code></pre></div>
+<p>not — Execute the stage when the nested condition is false.</p>
+<div class="highlight"><pre><span></span><code>`when { not { branch &#39;master&#39; } }`
+</code></pre></div>
+<h4 id="multiple-conditions">MULTIPLE CONDITIONS<a class="headerlink" href="#multiple-conditions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>If the when directive contains more than one condition, all specified conditions must return true for the stage to execute.</p>
+</li>
+<li>
+<p>This is identical to using the allOf condition</p>
+</li>
+</ul>
+<h4 id="implementing-when-directive">IMPLEMENTING "WHEN" DIRECTIVE<a class="headerlink" href="#implementing-when-directive" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>The "Confirm Deploy to Staging" and "Deploy to Staging" steps are only appropriate when building from the master branch.</p>
+</li>
+<li>
+<p>Use Ctrl+S (Cmd+S on macOS) to open the Blue Ocean code editor and add when directives that specify the branch condition to these two stages.</p>
+</li>
+<li>
+<p>The Blue Ocean Editor does not show the when directive but it is in the Jenkinsfile.</p>
+</li>
+<li>
+<p>When we save and run the Pipeline, these steps are skipped because we are not working on the master branch.</p>
+</li>
+</ul>
+<h4 id="when-directive-example">"WHEN" DIRECTIVE EXAMPLE<a class="headerlink" href="#when-directive-example" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Confirm Deploy to Staging&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">when</span> <span class="o">{</span>
+      <span class="n">branch</span> <span class="s1">&#39;master&#39;</span>
+    <span class="o">}</span>
+    <span class="n">steps</span> <span class="o">{</span>
+      <span class="n">input</span><span class="o">(</span><span class="nl">message:</span> <span class="s1">&#39;Deploy to Stage&#39;</span><span class="o">,</span> <span class="nl">ok:</span> <span class="s1">&#39;Yes, let\&#39;s do it!&#39;</span><span class="o">)</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+  <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Deploy to Staging&#39;</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">agent</span> <span class="o">{</span>
+      <span class="n">node</span> <span class="o">{</span>
+        <span class="n">label</span> <span class="s1">&#39;java8&#39;</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">when</span> <span class="o">{</span>
+      <span class="n">branch</span> <span class="s1">&#39;master&#39;</span>
+    <span class="o">}</span>
+    <span class="n">steps</span> <span class="o">{</span>
+      <span class="n">unstash</span> <span class="s1">&#39;Buzz Java 8&#39;</span>
+      <span class="n">sh</span> <span class="s1">&#39;./jenkins/deploy.sh staging&#39;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">...</span>
+</code></pre></div>
+<h3 id="credentials-example-code">CREDENTIALS EXAMPLE CODE<a class="headerlink" href="#credentials-example-code" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Deploy Reports&#39;</span><span class="o">)</span>
+    <span class="n">steps</span> <span class="o">{</span>
+    <span class="o">...</span>
+        <span class="n">withCredentials</span><span class="o">(</span><span class="nl">bindings:</span> <span class="o">[</span><span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">&#39;my-elastic-key&#39;</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">&#39;ELASTIC_ACCESS_KEY&#39;</span><span class="o">)])</span> <span class="o">{</span>
+            <span class="c1">// Environment Variable available in the remote shell</span>
+            <span class="n">sh</span> <span class="s2">&quot;env | grep ELASTIC_ACCESS_KEY&quot;</span>
+            <span class="n">sh</span> <span class="s2">&quot;echo ${ELASTIC_ACCESS_KEY} &gt; secret-file.txt&quot;</span>
+        <span class="o">}</span>
+<span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div>
+<h3 id="set-timeout">SET TIMEOUT<a class="headerlink" href="#set-timeout" title="Permanent link">&para;</a></h3>
+<p>EXAMPLE: SET TIMEOUT</p>
+<p>timeout for the entire Pipeline (Note the double quotes around DAYS</p>
+<div class="highlight"><pre><span></span><code><span class="n">options</span> <span class="o">{</span>
+  <span class="n">timeout</span><span class="o">(</span><span class="nl">time:</span> <span class="mi">3</span><span class="o">,</span> <span class="nl">unit:</span> <span class="s2">&quot;DAYS&quot;</span><span class="o">)</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>timeout for an "input" stage</p>
+<div class="highlight"><pre><span></span><code><span class="n">steps</span> <span class="o">{</span>
+  <span class="n">timeout</span><span class="o">(</span><span class="nl">time:</span><span class="mi">3</span><span class="o">,</span> <span class="nl">unit:</span><span class="s2">&quot;DAYS&quot;</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">input</span><span class="o">(</span><span class="nl">message:</span> <span class="s2">&quot;Deploy to Stage&quot;</span><span class="o">,</span> <span class="nl">ok:</span> <span class="s2">&quot;Yes, let&#39;s do it!&quot;</span><span class="o">)</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>BUT WAIT, I DON’T KNOW THE SYNTAX TO SET THE OPTIONS FOR THE ENTIRE PIPELINE DECLARATIVE DIRECTIVE GENERATOR CAN HELP</p>
+<p>DECLARATIVE DIRECTIVE GENERATOR CAN HELP</p>
+<h3 id="example-of-parameters">EXAMPLE OF PARAMETERS<a class="headerlink" href="#example-of-parameters" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
+  <span class="n">agent</span> <span class="n">none</span>
+  <span class="n">parameters</span> <span class="o">{</span>
+    <span class="n">string</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;DEPLOY_ENV&#39;</span><span class="o">,</span> <span class="nl">defaultValue:</span> <span class="s1">&#39;staging&#39;</span><span class="o">,</span> <span class="nl">description:</span> <span class="s1">&#39;&#39;</span><span class="o">)</span>
+  <span class="o">}</span>
+  <span class="n">stages</span> <span class="o">{</span>
+    <span class="n">stage</span> <span class="o">(</span><span class="s1">&#39;Deploy&#39;</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">echo</span> <span class="s2">&quot;Deploying to ${DEPLOY_ENV}&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<h3 id="supported-triggers">SUPPORTED TRIGGERS<a class="headerlink" href="#supported-triggers" title="Permanent link">&para;</a></h3>
+<p>cron — Schedule a run at a specified time</p>
+<p>pollSCM — Define a regular interval at which Jenkins should check for new source changes; run the Pipeline if such changes are found</p>
+<p>upstream — Define conditions when a Pipeline should run because of the results of another Pipeline run. See Result class for details about specifying the threshold used.</p>
+<p>IMPLEMENT A TRIGGER</p>
+<p>Triggers are specified at the top level of the Pipeline. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
+    <span class="n">agent</span> <span class="n">any</span>
+    <span class="n">triggers</span> <span class="o">{</span>
+        <span class="n">cron</span><span class="o">(</span><span class="s1">&#39;H */4 * * 1-5&#39;</span><span class="o">)</span>
+    <span class="o">}</span>
+    <span class="n">stages</span> <span class="o">{</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Example&#39;</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">echo</span> <span class="s1">&#39;Hello World&#39;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<h3 id="credential-usage-example">Credential Usage Example<a class="headerlink" href="#credential-usage-example" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Deploy Reports&#39;</span><span class="o">)</span>
+   <span class="n">steps</span> <span class="o">{</span>
+   <span class="o">...</span>
+   <span class="n">withCredentials</span><span class="o">(</span><span class="nl">bindings:</span> <span class="o">[</span><span class="n">string</span><span class="o">(</span><span class="nl">credentialsId:</span> <span class="s1">&#39;elastic-access-key&#39;</span><span class="o">,</span> <span class="nl">variable:</span> <span class="s1">&#39;ELASTIC_ACCESS_KEY&#39;</span><span class="o">)])</span> <span class="o">{</span>
+  <span class="c1">// Environment Variable available in the remote shell</span>
+  <span class="n">sh</span> <span class="s1">&#39;env | grep ELASTIC_ACCESS_KEY&#39;</span>
+  <span class="n">sh</span> <span class="s1">&#39;echo ${ELASTIC_ACCESS_KEY} &gt; secret-file.txt&#39;</span>
+
+  <span class="c1">// Groovy Variable</span>
+  <span class="n">sh</span> <span class="s2">&quot;echo ${ELASTIC_ACCESS_KEY} &gt; secret-file.txt&quot;</span>
+  <span class="o">}</span>
+<span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>NOTES ABOUT EXAMPLE CODE</p>
+<p>Credentials are implemented in a Pipeline using the withCredentials() method</p>
+<p>Uses the credential that is defined with the ID of elastic-access-key</p>
+<p>withCredentials binds that to a local Pipeline variable called ELASTIC_ACCESS_KEY</p>
+<p>The deploy-token step uses the ELASTIC_ACCESS_KEY local Pipeline variable to establish the credentials that it needs</p>
+<p>Anyone who can run this Pipeline gets the necessary credentials to run deploy-token</p>
+<h3 id="simple-validation-of-a-backup">SIMPLE VALIDATION OF A BACKUP<a class="headerlink" href="#simple-validation-of-a-backup" title="Permanent link">&para;</a></h3>
+<p>A simple way to validate a full backup is to restore it to a temporary location:</p>
+<p>Create a directory for the test validation (such as /mnt/backup-test) and restore the backup to that directory</p>
+<p>Set $JENKINS_HOME to point to this directory, specifying a random HTTP port so you do not collide with the real Jenkins instance:</p>
+<p>export JENKINS_HOME=/mnt/backup-test
+Now execute the restored Jenkins instance:</p>
+<p>java-jar jenkins.war ---httpPort=9999</p>
+<h3 id="jenkins-cli">Jenkins CLI<a class="headerlink" href="#jenkins-cli" title="Permanent link">&para;</a></h3>
+<p><code>cloudbees-devbox $ export JENKINS_URL=http://jenkins:8080/jenkins
+cloudbees-devbox $ java -jar jenkins-cli.jar \
+ -auth butler:{API Token} help</code></p>
+<p>### No Proxy Setup</p>
+<p>You can instead configure No Proxy Host using the -Dhttp.nonProxyHosts property in the Master startup script</p>
+<p>### FIREWALL CONSIDERATIONS</p>
+<p>If your CloudBees Core instances run behind a Firewall:</p>
+<ul>
+<li>
+<p>The firewall must use raw tcp mode for the CLI port</p>
+</li>
+<li>
+<p>Complex keep-alive functionality on the firewall may interfere with CloudBees Core operations</p>
+</li>
+<li>
+<p>The firewall must not exercise round robin operations on the CLI port</p>
+</li>
+</ul>
+<h3 id="rbac-components">RBAC COMPONENTS<a class="headerlink" href="#rbac-components" title="Permanent link">&para;</a></h3>
+<p>RBAC = Role-Based Access Control</p>
+<p>Roles defined by administrators</p>
+<p>Set of Permissions assigned to Roles</p>
+<p>Roles assigned to Groups</p>
+<p>Users belong to Groups</p>
+<p>Groups defined for Masters, Folders, and Jobs</p>
+<p>ALTERNATIVES TO RBAC
+Authorization can be implemented using the standard Jenkins Matrix-based security strategy</p>
+<p>You must install the Matrix Authorization Strategy Plugin manually</p>
+<p>If you have a large number of users, this can be very cumbersome to maintain over time</p>
+<p>Team Masters on CloudBees Core on modern cloud platforms provides a simplified authorization strategy</p>
+<p>All users with administer authorization on the Operations Center have administer authorization for each Team Master</p>
+<p>The Administrator for the Team Master defines the users for that Master and whether each user is an Administrator, a Member who can read, write, and execute Pipelines, or a Guest who has read-only access to the Pipelines on this Master</p>
+<p>ROLE-BASED ACCESS CONTROL
+rbac simplified</p>
+<p>BENEFITS OF RBAC
+RBAC supports granular permissions for roles</p>
+<p>Similar to Linux file permissions but more extensive</p>
+<p>For example</p>
+<p>Browse role has read-only permissions</p>
+<p>QA role supports read/write/execute permissions</p>
+<p>Roles and Groups assignable to CloudBees Core objects to apply to contents</p>
+<p>For example</p>
+<p>A team-only project folder containing all jobs in a pipeline</p>
+<p>A QA job only available to the QA team</p>
+<p>Groups allow for mass permissions management</p>
+<p>CLOUDBEES RBAC PLUGIN
+CloudBees Core includes the RBAC plugin</p>
+<p>RBAC configurable in Authorization Policy</p>
+<p>Manage Jenkins → Configure Global Security</p>
+<p>WHAT RBAC ALLOWS
+RBAC allows:</p>
+<p>Global level role assignment</p>
+<p>Object specific authorizations</p>
+<p>Roles can apply to all objects</p>
+<p>Masters</p>
+<p>Shared agents</p>
+<p>Jobs</p>
+<p>Folders</p>
+<p>Views</p>
+<p>Roles are selectively inheritable</p>
+<p>Filter out undesired inheritance from Parent to Child</p>
+<h3 id="configure-non-blocking-io-ssh-agents">CONFIGURE NON-BLOCKING I/O SSH AGENTS<a class="headerlink" href="#configure-non-blocking-io-ssh-agents" title="Permanent link">&para;</a></h3>
+<p>Configured when you create a new agent, shared agent, or shared cloud</p>
+<div class="highlight"><pre><span></span><code>* Launch agents on Unix machines via SSH (Non-blocking I/O)
+
+    * Prefix Start Agent Command syntax
+
+    * Suffix Start Agent Command syntax
+
+    * Logging of Agent Environment
+</code></pre></div>
+<p>Only minor differences from old SSH configuration</p>
+<h4 id="prefixsuffix-start-agent">PREFIX/SUFFIX START AGENT<a class="headerlink" href="#prefixsuffix-start-agent" title="Permanent link">&para;</a></h4>
+<p>Prefix Start Agent</p>
+<p>Command to be <strong>prepended</strong> to the start agent command</p>
+<p>You no longer need to remember to include a space</p>
+<p>Suffix Start Agent</p>
+<p>Command to be <strong>appended</strong> to the start agent command</p>
+<p>You no longer need to remember to include a space</p>
+<p>LOGGING OF AGENT ENVIRONMENT
+The traditional SSH connector outputs environment variables to build log</p>
+<p>NIO SSH makes this optional</p>
+<p>Off by default</p>
+<p>Agent environment variables on the node’s System Information screen</p>
+<p>USING NON-BLOCKING SSH AGENTS ON WINDOWS
+Works with Cygwin’s OpenSSH</p>
+<p>Other SSH implementations on Windows not tested</p>
+<p>See documentation for troubleshooting steps</p>
+<p>Setting up a reference Windows agent</p>
+<h3 id="assign-permissions-on-shared-nodes">ASSIGN PERMISSIONS ON SHARED NODES<a class="headerlink" href="#assign-permissions-on-shared-nodes" title="Permanent link">&para;</a></h3>
+<p>In most cases, you will want to grant the same permissions to the same roles you use for regular agents but you have the option of defining different permissions and roles</p>
+<p>Client Master /Configure -</p>
+<p>Can modify the configuration and management parts of Client Masters</p>
+<p>Shared Agent /Configure and Shared Cloud /Configure -</p>
+<p>Can modify the configuration of shared agents and shared clouds</p>
+<p>Shared Agent /Connect and Shared Cloud /Connect -</p>
+<p>Allows an inbound agent to be connected as a shared agent or shared cloud</p>
+<p>Shared Agent /Disconnect and Shared Cloud /Disconnect -</p>
+<p>Disconnect an inbound agent from the shared cloud</p>
+<p>Shared Agent /ForceRelease and Shared Cloud /ForceRelease -</p>
+<p>Can force a lease of a shared agent into the released state</p>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 5, 2021</span>
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/sagarvsh" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://gitter.im/squidfunk/mkdocs-material" target="_blank" rel="noopener" title="gitter.im" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/" target="_blank" rel="noopener" title="hub.docker.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/squidfunk" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://linkedin.com/in/squidfunk/" target="_blank" rel="noopener" title="linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://instagram.com/squidfunk" target="_blank" rel="noopener" title="instagram.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['tabs'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

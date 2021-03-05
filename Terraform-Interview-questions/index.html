@@ -1,0 +1,1059 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Welcome to my personal documentation site These pages contain radom documents which I have created which may be useful or just saved for the sake of it Dont know when it will be useful, but what the hell Lets publish it, Cheers!!!">
+      
+      
+      
+        <link rel="canonical" href="https://sagarvsh.github.io/Documents/Terraform-Interview-questions/">
+      
+      
+        <meta name="author" content="Sagar V S">
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Terraform Interview quetions - DevOps Documents</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ff6e42">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700%7CUbuntu+Mono&display=fallback">
+        <style>body,input{font-family:"Ubuntu",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#terraform-interview-quetions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://sagarvsh.github.io/Documents/" title="DevOps Documents" class="md-header-nav__button md-logo" aria-label="DevOps Documents">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DevOps Documents
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Terraform Interview quetions
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/sagarvsh/Documents" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sagarvsh/Documents
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://sagarvsh.github.io/Documents/" title="DevOps Documents" class="md-nav__button md-logo" aria-label="DevOps Documents">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    DevOps Documents
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/sagarvsh/Documents" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sagarvsh/Documents
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started.md" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-your-site.md" class="md-nav__link">
+      Creating your site
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../publishing-your-site.md" class="md-nav__link">
+      Publishing your site
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../customization.md" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshooting.md" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data-privacy.md" class="md-nav__link">
+      Data privacy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../insiders.md" class="md-nav__link">
+      Insiders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../license.md" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      CICD Tools
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="CICD Tools" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        CICD Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../github/github.md" class="md-nav__link">
+      GitHub
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../jenkins/" class="md-nav__link">
+      Jenkins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/changing-the-language.md" class="md-nav__link">
+      Changing the language
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/changing-the-logo-and-icons.md" class="md-nav__link">
+      Changing the logo and icons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-navigation.md" class="md-nav__link">
+      Setting up navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-site-search.md" class="md-nav__link">
+      Setting up site search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-site-analytics.md" class="md-nav__link">
+      Setting up site analytics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/setting-up-the-header.md" class="md-nav__link">
+      Setting up the header
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/adding-social-links.md" class="md-nav__link">
+      Adding social links
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/adding-a-git-repository.md" class="md-nav__link">
+      Adding a git repository
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/adding-a-comment-system.md" class="md-nav__link">
+      Adding a comment system
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/abbreviations.md" class="md-nav__link">
+      Abbreviations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/admonitions.md" class="md-nav__link">
+      Admonitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/buttons.md" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/code-blocks.md" class="md-nav__link">
+      Code blocks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/content-tabs.md" class="md-nav__link">
+      Content tabs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/data-tables.md" class="md-nav__link">
+      Data tables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/footnotes.md" class="md-nav__link">
+      Footnotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/formatting.md" class="md-nav__link">
+      Formatting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/icons-emojis.md" class="md-nav__link">
+      Icons + Emojis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/images.md" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/lists.md" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/mathjax.md" class="md-nav__link">
+      MathJax
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/meta-tags.md" class="md-nav__link">
+      Meta tags
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/variables.md" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Changelog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Changelog" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Changelog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../changelog.md" class="md-nav__link">
+      Release notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../upgrading.md" class="md-nav__link">
+      Upgrading
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deprecations.md" class="md-nav__link">
+      Deprecations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="terraform-interview-quetions">Terraform Interview quetions<a class="headerlink" href="#terraform-interview-quetions" title="Permanent link">&para;</a></h1>
+<ol>
+<li>
+<p>Define Terraform.
+Answer: The first entry among Terraform interview questions always deals with the definition of Terraform. Terraform is a tool for creating, changing, and versioning infrastructure with higher safety and efficiency. Terraform is now popular all over the world as an important addition to the chain of important DevOps tools. Terraform provides essential functionalities of managing solutions for in-house issues. The facility of ‘infrastructure as a code’ model in Terraform is also one of the popular reasons for its adoption. </p>
+</li>
+<li>
+<p>What are the reasons to choose Terraform for DevOps?
+Answer: Candidates would definitely encounter this mention among top Terraform interview questions. The foremost reason to choose Terraform for DevOps is evident in the improvement of quality and efficiency in software delivery. Terraform supports automation and helps in running infrastructure as code. Another potential reason for choosing Terraform is the facility for implementing almost any type of coding principle. </p>
+</li>
+</ol>
+<p>Also Read: Top 30 Kubernetes Interview Questions</p>
+<ol>
+<li>What are the notable features of Terraform?
+Answer: The features of Terraform would be one of the common topics of the latest Terraform interview questions. The key features of Terraform are as follows.</li>
+</ol>
+<p>In-built graphing features for visualization of infrastructure
+Friendly custom syntax helps in improving efficiency
+The ability for understanding resource relationships
+Contribution of updates and new features by the Open Source Project
+Capability for breaking down a configuration into smaller parts for ease of organization and maintenance
+4. How does Terraform work?
+Answer: The working of Terraform is a formidable topic that churns out many relevant Terraform interview questions. The best answer to this question would be to point towards the plugin-based architecture of Terraform. The plugin-based architecture helps developers in extending functionalities of Terraform. Developers could write new plugins or compile the modified versions of current plugins. </p>
+<ol>
+<li>What are the notable applications of Terraform?
+Answer: The use cases of Terraform are also important aspects of the best Terraform interview questions. Generally, the applications of Terraform are very broad due to the facility for extending the abilities of Terraform for resource manipulation. Here are some of the notable applications of Terraform.</li>
+</ol>
+<p>Heroku App setup
+Self-service clusters
+Development of multi-tier applications
+Creation of disposable environments
+Multi-cloud deployment
+Resource schedulers
+Developing software demos
+Ansible and Terraform are the two names that are prominent in the DevOps landscape now. Let’s understand the Ansible vs Terraform battle!</p>
+<ol>
+<li>What is the process for making the object of one module available for another module at a higher level?
+Answer: This entry can be one of the difficult Terraform interview questions. Here is the process to make an object of one module available for another module at a higher level.</li>
+</ol>
+<p>Define an output variable in a resource configuration. </p>
+<p>Declare the output variable of module_1 for use in another module’s configuration</p>
+<p>Create a new key name and ensure that it is equivalent to the output variable of module_1</p>
+<p>Now, create a file ‘variable.tf’ for module_2</p>
+<p>Set up an input variable inside the ‘variable.tf’ the file that would enable dynamic configuration of the resource in a module</p>
+<p>In order to ensure the availability of the variable to another module, repeat the process again. The reason for this is the restricted scope of the particular variable to module_2.</p>
+<ol>
+<li>
+<p>Do you know about the new factors in the latest v1.24.0 and v1.25.0 Terraform Azure Provider?
+Answer: Candidates should prepare for such Terraform technical interview questions. You can find multiple new resources in the latest versions of Terraform alongside new data resources. For example, Azurerm_batch_certificate. The new resource can support the management of certificates in the Azure batch. Furthermore, it also helps in the management of public IP and the prefix in networking. Another data resource in the latest versions is the Azurerm_firewall that helps in accessing data for a particular firewall existing already. In addition, the new versions also involve a lot of bug fixes. You can also find improvement in the azurerm_app_service resource in the latest versions.</p>
+</li>
+<li>
+<p>Does Terraform support themes?
+Answer: Candidates could land up with this entry among Terraform technical interview questions generally. The answer implies that the v0.3.1 of Terraform supports Gtk themes. We can use the command “cp/usr/wherever/THEMENAME/gtk/gtkrc $HOME/.gtkrc” for enabling gtk theme in a system. If the command shows error in opening the theme files or in the event of failure of the files to open, edits in the .gtkrc are mandatory. After editing, you have to attach the line “pixmap_path/usr/wherever/THEMENAME/gtk” at the start of the file name. Now, the theme could load at startup. </p>
+</li>
+<li>
+<p>What are the components of Terraform?
+Answer: The structure of Terraform is another notable point for the best Terraform interview questions. The logical division of Terraform into distinct structures refers to two distinct components. The two components are the Terraform Core and Terraform Plugins. The Terraform Core utilizes remote procedure calls (RPCs) for communicating with Terraform Plugins. In addition, Terraform Core also offers diverse ways of discovering and loading plugins according to requirements. The Terraform Plugins represent an implementation for a specific service such as bash or AWS or provisioner. </p>
+</li>
+<li>
+<p>What are the primary responsibilities of Terraform Core?
+Answer: This is one of the basic Terraform interview questions that you can face. The Terraform Core is a statically-compiled binary written by using the Go programming language. The compiled binary offers an entry-point for Terraform users. The primary responsibilities of the Terraform Core are as follows.</p>
+</li>
+</ol>
+<p>Resource state management
+Execution of plans
+Communication with plugins through RPC
+Construction of Resource Graph
+Infrastructure as code functionalities for reading and interpolation of configuration files and modules
+Check: Most Common Jenkins Interview Questions &amp; Answers</p>
+<ol>
+<li>
+<p>What is the Terraform Plugins?
+Answer: Candidates should prepare for Terraform interview questions based on this topic. Terraform Plugins are executable binaries written in Go programming language. Plugins are basically the providers and provisioners in Terraform configurations. Terraform has various in-built provisioner plugins, and users have to discover provider plugins dynamically according to their requirements. The Terraform plugins help in domain-specific implementation of the service they represent. </p>
+</li>
+<li>
+<p>What are the primary responsibilities of the provider and provisioner plugins?
+Answer: Candidates could find this entry as a follow up to Terraform interview questions on architecture or the Terraform plugins. The primary responsibilities for provider plugins are as follows.</p>
+</li>
+</ol>
+<p>Authentication with infrastructure provider
+Definition of resources that map to particular services
+Initialization of libraries used for making API calls
+The primary responsibility of provisioner plugins is the execution of commands or scripts on a specific resource after creation or upon its destruction.</p>
+<ol>
+<li>
+<p>How does Terraform help in discovering plugins?
+Answer: This entry is one of the most popular Terraform interview questions. The command “terraform init” helps Terraform read configuration files in the working directory. Then, Terraform finds out the necessary plugins and searches for installed plugins in different locations. In addition, Terraform also downloads additional plugins at times. Then, it decides the plugin versions for using and writes a lock file for ensuring that Terraform will use the same plugin versions. </p>
+</li>
+<li>
+<p>What are the different behaviors of Terraform plugins during discovery?
+Answer: This question is one of the tricky Terraform interview questions that can confuse many expert candidates. The behavior of the plugins depends on their type. The three kinds of plugins are built-in provisioners, providers by HashiCorp, and third-party providers and provisioners. The in-built provisioner plugins are always available in the Terraform binary. The providers by HashiCorp download automatically if not installed already. Regarding the third-party providers and provisioners, you have to install them manually. </p>
+</li>
+<li>
+<p>What is the Terraform configuration for creating a single EC2 instance on AWS?
+Answer: Candidates could land up with this interesting entry among Terraform DevOps interview questions. The following Terraform configuration helps in creating a single EC2 instance on AWS.</p>
+<p><div class="highlight"><pre><span></span><code>provider &quot;aws&quot; {
+
+region = &quot;ap-south-1&quot;
+
+}
+
+resource &quot;aws_instance&quot;
+
+&quot;example&quot; {
+
+ami = &quot;ami-4fc58420&quot;
+
+instance_type = &quot;t2.micro&quot;
+
+tags {
+
+Name = &quot;terraform-example&quot;
+
+}
+
+}
+</code></pre></div>
+It is required to be fully prepared before going for a DevOps interview. Prepare with these Top DevOps Interview Questions to ace the interview!</p>
+</li>
+<li>
+<p>Why does POVRay render fields and does not display sometimes?
+Answer: This is one of the critical Terraform DevOps interview questions. The primary reason for the failure of default export to POVRay could be the lower version of POVRay. Version 3.0 of POVRay does not support the display. The same reason could be evident in the case of failure in a display of POVRay without error reports. Terraform works effectively with the 3.1 version of POVRay. So, you should use the –pov30 switch for informing Terraform about the issue. You can check the version of POVRay by typing “POVRay” and observing the first line of the output. </p>
+</li>
+<li>
+<p>How can I check if the POVRay install is compatible with Terraform?
+Answer: Candidates could find tough Terraform interview questions like this one. You can try “povray+l tf_land.pov” to check whether the POVRay installs on your system is ok with Terraform. You can find two outcomes – one good and one bad. The good message is an error “tf_land.pov:26:error: Error opening TGA image”. The “tf_land.pov” denotes the file distributed in the root directory of terraforming. It means that you can find the included file in the POV on your system. The second message is about ‘colors.inc,’ that indicates the absence of files in your POV. As a result, you can clearly find out whether the POVRay installs works with Terraform or not. </p>
+</li>
+<li>
+<p>What if I encounter a serious error and want to rollback?
+Answer: Candidates should find this entry among practical Terraform interview questions. The answer is recommitting the previous version of the code for making it the new and current version in a VCS (Version Control System). As a result, a terraform run triggers and runs the old code. It is essential to ensure that the old code contains all entities provisioned in the code for rollback. If the state file has been subject to corruption from a recent Terraform run, then you can opt for State Rollback Feature in Terraform Enterprise. It can help you to roll back to the previous latest state. The validation for this process is the versioning of every state change. </p>
+</li>
+<li>
+<p>Can I add policies to the open-source or Pro version of Terraform Enterprise?
+Answer: This is one of the most popular Terraform interview questions coming up in recent interviews. First of all, you cannot add policies to the open-source version of Terraform Enterprise. The same also goes for the Enterprise Pro version. The Premium version of Terraform Enterprise only could access the sentinel policies.</p>
+</li>
+<li>
+<p>What are the ways to lock Terraform module versions?
+Answer: Candidates could find such technical Terraform interview questions difficult. Preparing for such questions in advance gives candidates a definite advantage. The answer is that there is a proven way of locking Terraform module versions. Using the Terraform module registry as a source, you can use the ‘version’ attribute in the module in the Terraform configuration file. Using a GitHub repository as a source, you have to specify branch, versions, and query string with ‘?ref’.</p>
+</li>
+<li>
+<p>Are callbacks possible with Terraform on Azure?
+Answer: This is also one of the new Terraform interview questions for aspiring candidates. Callbacks are possible on Azure with Terraform by using the Azure Event Hubs. AzureRM provider of Terraform provides this functionality easily to users. Most important of all, Azure Cloud Shell of Microsoft provides an already installed instance of Terraform. </p>
+</li>
+</ol>
+<p>If you’re a cloud professional preparing for an Azure interview, we recommend you to prepare with the top Azure interview questions.</p>
+<ol>
+<li>
+<p>Can I use Terraform for on-premises infrastructure?
+Answer: Candidates could find this question as one of the tough ones based on real experience. The answer to this question clearly implies the feasibility of using Terraform with on-premises infrastructure. Many providers offer this functionality, and you can choose one according to your requirements. Certain providers also have APIs for accessing Terraform in on-premises infrastructure.</p>
+</li>
+<li>
+<p>What are the version controls supported on Terraform?
+Answer: The candidate could find this entry as one of the important Terraform interview questions. Although this question may seem to be the simplest of the lot, it is essential to point out the precise responses. First of all, GitHub is the basic version control supported on Terraform. In addition, you can also find the support of GitLab CE and GitLab EE on Terraform. Furthermore, Terraform also supports the Bucket Cloud. </p>
+</li>
+<li>
+<p>Is there any similarity between the management of Azure Availability Zones and management by other available cloud providers?
+Answer: The response to this question would directly refer to the fact that availability zones have different areas and zones. Every availability zone has a specific power source and network. Any region with an enabled availability zone would have three different availability zones. You need to note that AzureRM Terraform provider does not have any accessible resources for the management of Azure Availability Zones. However, this is the present scenario, and AzureRM Terraform provider could include some improvements in the future for this issue. </p>
+</li>
+<li>
+<p>How can I upgrade plugins on Terraform?
+Answer: The answer would start off with running ‘terraform init’ with the ‘-upgrade’ option. The command helps in rechecking the releases.hashicorp.com to find out new acceptable provider versions. The command also downloads the available provider versions. Such types of actions are evident in the case of providers which have their acceptable versions in the automatic downloads directory. The automatic downloads directory is “.terraform/plugins/<OS>_<ARCH>.”</p>
+</li>
+</ol>
+<p>In case of installation of any acceptable version of a specific provider in another location, the ‘terraform init -upgrade’ command will not download a new version. </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Chef is one of the top DevOps tools. If you are going for a DevOps interview, don’t forget to check out these top Chef interview questions and answers!</p>
+</div>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 5, 2021</span>
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/sagarvsh" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://gitter.im/squidfunk/mkdocs-material" target="_blank" rel="noopener" title="gitter.im" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/" target="_blank" rel="noopener" title="hub.docker.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/squidfunk" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://linkedin.com/in/squidfunk/" target="_blank" rel="noopener" title="linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://instagram.com/squidfunk" target="_blank" rel="noopener" title="instagram.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['tabs'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
