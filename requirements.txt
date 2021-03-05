@@ -7,7 +7,7 @@ mkdocs-exclude>=1.0.2
 pymdown-extensions>=7.0
 mkdocs-material-extensions>=1.0
 mkdocs-git-revision-date-localized-plugin>=0.7
-
+mkdocs-redirects==1.0.1
 
 #mkdocs-table-reader-plugin>=0.4.1
 #pandas>=1.1.0
